@@ -1,263 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-      * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  background: rgb(235,235,235);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-nav .wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  padding: 0.3rem 4rem;
-  background: #fff;
-} 
-nav .wrapper .left,
-nav .wrapper .right{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-}
-nav .wrapper .left{
-  padding-right: 3rem;
-  display: flex;
-  gap: 0.7rem;
-}
- 
-nav .wrapper .right{
-  padding-left: 8rem;
-}
-nav .wrapper .left .input{
-  background: rgb(226,245,250);
-  width: 100%;
-  padding: 0.5rem 0.8rem;
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-  border-radius: 0.2rem;
-}
-nav .wrapper .left .input input[type='search']{
-  width: 15rem;
-  border: none;
-  background: transparent;
-}
-nav .wrapper .left .logo  {
-  padding-top: 3px;
-}
-nav .wrapper .right .home,
-nav .wrapper .right .network,
-nav .wrapper .right .jobs,
-nav .wrapper .right .message,
-nav .wrapper .right .notifications,
-nav .wrapper .right .me ,
-nav .wrapper .right .work {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  cursor: pointer;
-}
-nav .wrapper .right .home,
-nav .wrapper .right .network:hover,
-nav .wrapper .right .jobs:hover,
-nav .wrapper .right .message:hover,
-nav .wrapper .right .notifications:hover,
-nav .wrapper .right .me .down:hover,
-nav .wrapper .right .work .down:hover {
-  color: #000;
-}
-
-nav .wrapper .right .network,
-nav .wrapper .right .jobs,
-nav .wrapper .right .message,
-nav .wrapper .right .notifications,
-nav .wrapper .right .work {
-color: gray;
-}
-nav .wrapper .right .home i,
-nav .wrapper .right .network i,
-nav .wrapper .right .jobs i,
-nav .wrapper .right .message i,
-nav .wrapper .right .notifications i{
-  padding: -1px;
-  font-size: 1.2rem;
-}
-nav .wrapper .right .me .down,
-nav .wrapper .right .work .down{      
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.3rem;
-  color: gray;
-}
-nav .wrapper .right .me i:first-child {
-  padding: -1;
-  background: gray;
-  color: #fff;
-  width: .9rem;
-  height: .9rem;
-  border-radius: 50%;
-  font-size: 0.9rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.wrapper a{
-  text-decoration: none;
-  font-size: 0.7rem;
-  width: 7rem;
-  text-align: center;
-  cursor: pointer;
-  color: rgb(161, 111, 18);
-}
-/*nav bar ended*/
-.container {
-  display: grid;
-  grid-template-columns: 20% 50% 30%;
-  gap: 2rem;
-  width: 85%;
-  margin: 1.8rem auto;
-}
-aside .sidebar {
-  background-color: #fff;
-  width: 100%;
-  height: 47vh;
-  position: relative;
-  border-radius: 1rem;
-  overflow: hidden;
-}
-.sidebar .top {
-  width: 100%;
-  height: 9vh;
-  background-color: rgb(173, 188, 207);
-  position: absolute;
-}
-.sidebar img {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
-  top: 4.7%;
-  border-radius: 50%;
-  width: 6rem;
-  height: 6rem;
-  border: 2px solid#fff;
-}
-aside .sidebar .profile {
-  position: relative;
-  text-align: center;
-  top: 6%;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  border-bottom: 1px solid rgb(185,185,185);
-  height: 20vm;
-}
-.sidebar .profile small:hover {
-  color: gray;
-  text-decoration: underline;
-  cursor: pointer;
-
-}
-.sidebar .profile h4:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-.sidebar .view {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  top: 6%;
-  border-bottom: 1px solid rgb(185,185,185);
-  cursor: pointer;
-  font-size: 18px;
-  padding-left: 10px;
-}
-.sidebar .view .views {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0.2rem 0 0.4rem 0;
-  padding: 0.2rem 0.5rem;
-}
-.sidebar .view:hover,
-.sidebar .premium:hover,
-.sidebar .items:hover{
-  background-color: rgb(219, 201, 201);
-} 
-.sidebar .premium{
-  position: relative;
-  top: 7%;
-  cursor: pointer;
-  height: 7vh;
-}
-.sidebar .premium .h5{
-  color: gray;
-  font-weight: 80;
-  height: 7vh;
-}
-.sidebar .premium a {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-  text-decoration: none;
-  margin-left: 1rem;
-  font-size: 0.8rem;
-  color: #000;
-}
-.items{
-  position: relative;
-  top: 7%;
-  display: flex;
-  gap: 0.5rem;
-  margin-left: 1rem;
-  color: black;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-
-aside .recent_jobs {
-  background-color: #fff;
-  width: 100%;
-  height: 35vh;
-  position: relative;
-  border-radius: 1rem;
-  overflow: hidden;
-  margin-top: 0.5rem;
-}
-aside .recent_jobs .recent{
-  margin: 1rem;
-}
-.disco:hover {
-  background-color: lightblue;
-  cursor: pointer;
-}
-.disco {
-  color: gray;
-  display:flex;
-  justify-content:center;
-  align-items: center;
-  padding-top: 6px;
-  padding-bottom: 2px;
-}
-
-    </style>
-    <link rel="styleshrrt" href="linked.homepage/l.css"/>
+    <title>Linkedin</title>
+    <link rel="stylesheet" href=".//link.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
@@ -265,40 +10,47 @@ aside .recent_jobs .recent{
       <div class="wrapper">
         <div class="left">
         <div class="logo">
-          <i class="fa-brands fa-linkedin fa-xl" style="color: #175acf; font-size: 2.4rem;cursor: pointer;"></i>
+          <i class="fa-brands fa-linkedin fa-xl" style="color: #175acf; font-size: 2.4rem;cursor: pointer;">
+          </i>
         </div>
         <div class="input">
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-magnifying-glass">
+          </i>
           <input type="search" placeholder="Search">
         </div>
         </div>
         <div class="right">
         <div class="home">
-          <i class="fa-solid fa-house-chimney"></i> 
+          <i class="fa-solid fa-house-chimney">
+          </i> 
           <h6>
             Home
           </h6>
         </div>
         <div class="network">
-          <i class="fa-solid fa-user-group"></i>
+          <i class="fa-solid fa-user-group">
+          </i>
           <h6>
             My Network
           </h6>
         </div>
         <div class="jobs">
-          <i class="fa-solid fa-suitcase"></i>
+          <i class="fa-solid fa-suitcase">
+          </i>
           <h6>
             Jobs
           </h6>
         </div>
         <div class="message">
-          <i class="fa-sharp fa-solid fa-comment-dots"></i>
+          <i class="fa-sharp fa-solid fa-comment-dots">
+          </i>
           <h6>
             Messaging
           </h6>
         </div>
         <div class="notifications">
-          <i class="fa-solid fa-bell"></i>
+          <i class="fa-solid fa-bell">
+          </i>
           <h6>
             Notifications
           </h6>
@@ -309,7 +61,8 @@ aside .recent_jobs .recent{
               <h6>
                 Me
               </h6>
-              <i class="fa-sharp fa-solid fa-caret-down"></i>
+              <i class="fa-sharp fa-solid fa-caret-down">
+              </i>
             </div>
         </div>
         <div class="work">
@@ -338,51 +91,91 @@ aside .recent_jobs .recent{
           <img src="bangladesh.jpg">
 
           <div class="profile">
-            <h4>Welcome, Nur!</h4>
-            <small style="color: #175acf;padding-bottom: 5px;">Add a photo</small>  
+            <h4>
+              Welcome, Nur!
+            </h4>
+            <small style="color: #175acf;padding-bottom: 5px;">
+              Add a photo
+            </small>  
           </div>
           <div class="view">
-            <div class="who_views">
-              <h6 style="color: gray;">Connection </h6>
-              <h6 style="color: #175acf;">1</h6>
+            <div class="views">
+              <h6 style="color: gray;">
+                Connection
+              </h6>
+              <h5 style="color: #175acf;">
+                1
+              </h5>
             </div>
-            <div class="who_views">
-              <h6>Connect with alumni</h6>
+            <div class="views">
+              <h6>
+                Connect with alumni
+              </h6>
             </div>
           </div> 
           <div class="premium">
-            <h5 style="padding-left: 10px; color: gray;padding-top: 5px;">Access exclusive tools & insights</h5>
-            <a href="#"><i class="fa-solid fa-square" style="color: #f9bf43; font-size: 18px;"></i>
-              Try Premium for free</a>
-              <div style="color: white;padding-bottom: 9px;"></div>
+            <h5 style="padding-left: 10px; color: gray;padding-top: 5px;">
+              Access exclusive tools & insights
+            </h5>
+            <a href="#">
+              <i class="fa-solid fa-square" style="color: #f9bf43; font-size: 18px;">
+              </i>
+              Try Premium for free
+            </a>
+              <div style="color: white;padding-bottom: 9px;">
+              </div>
               <hr>
           </div>
           <div class="items">
-            <i class="fa-solid fa-bookmark" style="color: gray; padding-top: 9px;padding-left: 5px;"></i>
-            <h6 style="padding-top: 9px;">My items</h6>
+            <i class="fa-solid fa-bookmark" style="color: gray; padding-top: 9px;padding-left: 5px;">
+            </i>
+            <h6 style="padding-top: 9px;">
+              My items
+            </h6>
           </div>
         </div>
         <div class="recent_jobs">
-
           <div class="recent">
-            <a href="#" style="font-size: 14px;">Groups</a>
+            <div class="deco">
+              <h5 style="color: #175acf; cursor: pointer;">
+                Groups
+              </h5>
+            </div>
           </div>
           <div class="recent">
-            <a href="#" style="font-size: 14px;">Events</a>
+            <div class="plus">
+              <div>
+                <div class="deco">
+                  <h5 style="color: #175acf; cursor: pointer;">
+                      Events
+                  </h5>
+                </div>
+              </div>
+              <h5 style="font-size: 18px;color: gray;">
+                +
+              </h5>
+            </div>
           </div>
           <div class="recent">
-            <a href="#" style="font-size: 14px;">Followed Hashtags</a>
+            <div class="deco">
+              <h5 style="color: #175acf; cursor: pointer;">
+                Followed Hashtags
+              </h5>
+            </div>
           </div>
           <hr>
-          <div class="disco">Discover more</div>
+          <div class="disco">
+            Discover more
           </div>
+        <!---</div>--->
           <hr>
         </div>
       </aside>
+    </div>
       <!--sidebar ended-->
       <main>
         <div class="main_section">
-
+        
         </div>
       </main>
       <!---main section ended-->
@@ -390,6 +183,6 @@ aside .recent_jobs .recent{
 
       </div>
       <!---right section ended-->
-    </div>
+    
   </body>
 </html>
