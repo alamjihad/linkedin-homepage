@@ -1,0 +1,133 @@
+.reco {
+  display: flex;
+}
+.mes {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  font-size: 19px;
+  border: 1px solid #fff;
+  align-items: baseline;
+  padding-bottom: 5px;
+  cursor: pointer;
+  z-index: 500;
+  padding-right: 10px;
+}
+.lad {
+  height: 20px;
+}
+.feed {
+  height: 40vh;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.col {
+  display: flex;
+  height: 8vh;
+}
+.lili {
+  margin-top: 20px;
+  display: flex;
+}
+
+.com {
+  padding-top: 10px;
+}
+.lolo {
+  position: fixed;
+  z-index: 300;
+}
+
+.coltwo{
+  display: flex;
+  margin-top: 25px;
+}
+
+.lamba {
+  background: #fff;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+
+ .sem {
+  display: flex;
+  position: fixed;
+  right: 0;
+  background: #fff;
+  font-size: 19px;
+  border: 1px solid #fff;
+  align-items: baseline;
+  padding-bottom: 5px;
+  cursor: pointer;
+  z-index: 500;
+  padding-right: 1px;
+ }
+ .som {
+  margin-top: 88px;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  padding-right: 5px;
+  padding-left: 10px;
+  display: flex;
+  background: #fff;
+  width: 90%;
+  margin-right: 4px;
+  border-radius: 80px;
+  height: 30px;
+ }
+ .input {
+  width: 100%;
+  border: none;
+  background-color: white;
+  padding-left: 5px;
+ }
+ p {
+  margin-top: 140px;
+  padding-left: 50px;
+ }
+ .fro {
+  display: flex;
+ }
+ #modal {
+  display: none;
+ }
+ .counting .pop-up{
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+ }
+ /*.pop-up {
+  background-color: blanchedalmond;
+  position: fixed;
+  right: 0;
+  height: 240vh;
+  width: 43.5vh;
+  margin-top: 15vh;
+  color: black;
+  z-index: 100;
+  visibility: visible;
+  opacity: 1;
+  cursor: auto;
+ }*/
+ .counting #modal:checked ~ .pop-up {
+  background-color: blanchedalmond;
+  position: fixed;
+  right: 0;
+  height: 250vh;
+  width: 43.5vh;
+  margin-top: 15vh;
+  color: black;
+  z-index: 1000;
+  visibility: visible;
+  opacity: 1;
+  cursor: auto;
+
+ }

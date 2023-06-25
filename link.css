@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Poppins',sans-serif;
+  
   box-sizing: border-box;
 }
 body {
@@ -21,7 +21,7 @@ img {
   justify-content: space-between;
   background-color: #fff;
   padding: 6px 6%;
-  position: sticky;
+
   top: 0;
   z-index: 100;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
@@ -243,10 +243,12 @@ nav .wrapper .right .me i:first-child {
 /*sidebar started*/
 .container {
   display: grid;
-  grid-template-columns: 20% 54% 26%;
+  grid-template-columns: 22% 52% 26%;
   gap: 2rem;
-  width: 85%;
+  width: 90%;
   margin: 1.8rem auto;
+  margin-top: 66px;
+  z-index: 50;
 }
 aside .sidebar {
   background-color: #fff;
@@ -310,9 +312,7 @@ aside .sidebar .profile {
   margin: 0.2rem 0 0.4rem 0;
   padding: 0.2rem 0.5rem;
 }
-.sidebar .view:hover,
-/*.sidebar .premium:hover,
-.sidebar .items:hover*/ {
+.sidebar .view:hover {
   background-color: rgb(219, 201, 201);
 } 
 .sidebar .premium{
@@ -351,7 +351,7 @@ aside .sidebar .profile {
 aside .recent_jobs {
   background-color: #fff;
   width: 100%;
-  height: 35vh;
+  height: 33vh;
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
@@ -397,7 +397,7 @@ aside .recent_jobs .recent{
 main{
   background: #fff;
   border-radius: 0.8rem;
-  height: 22vh;
+  height: 21vh;
   position: relative;
 }
 main #close{
@@ -493,25 +493,96 @@ main .media .posts .post:hover{
   background: rgb(235,235,235);
   border-radius: 0.2rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*main side end here*/
 
 /*right side starts here*/
 .right_side{
   background: #fff;
   border-radius: 0.8rem;
-  height: 60vh;
+  height: 70vh;
+  cursor: pointer;
+}
+
+.right_side .news{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+img {
+  height: 40px;
+}
+.oppo {
+  display: flex;
+}
+
+.follow :hover {
+  background: #fff;
+}
+.follow {
+  justify-content: center;
+  display: flex;
+  background: #fff;
+  font-size: 18px;
+  border-radius: 50px;
+  border: 1px solid black;
+  width: 105px;
+}
+.reco {
+  display: flex;
+}
+.mes {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  font-size: 19px;
+  border: 1px solid #fff;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  z-index: 300;
+}
+.lad {
+  height: 20px;
+}
+.feed {
+  height: 40vh;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.col {
+  display: flex;
+  height: 8vh;
+}
+.lili {
+  margin-top: 20px;
+  display: flex;
+}
+
+.com {
+  padding-top: 10px;
+}
+.lolo {
+  position: fixed;
+  z-index: 300;
+}
+
+.coltwo{
+  display: flex;
+  margin-top: 25px;
+}
+
+.lamba {
+  background: #fff;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+.low {
+  border-radius: 1px solid gray;
 }
 
