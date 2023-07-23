@@ -579,7 +579,8 @@ h3:hover{
   margin: 1rem;
 }
 img {
-  height: 50px;
+  height: 55px;
+  width: 50px;
 }
 .oppo {
   display: flex;
