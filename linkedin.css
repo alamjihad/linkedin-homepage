@@ -782,7 +782,6 @@ img {
  }
  .counting #modal:checked ~ .pop-up {
   background-color: white;
-  font-family:fantasy;
   position: fixed;
   right: 0;
   height: 80vh;
